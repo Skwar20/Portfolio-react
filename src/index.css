@@ -15,7 +15,14 @@ html {
 }
 
 body {
+  position: relative;
   background-color: #1d1b31;
   color: white;
   font-family: Poppins;
+}
+
+@layer components {
+  .navLink {
+    @apply relative my-9 text-2xl font-normal text-gray-200 uppercase md:my-0 md:ml-4 md:text-base lg:mx-5 xl:ml-7 xl:text-xl before:absolute before:left-0 before:-bottom-1 before:w-full before:h-0.5 before:bg-fourth before:scale-0 hover:before:scale-100 before:duration-500;
+  }
 }

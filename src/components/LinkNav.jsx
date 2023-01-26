@@ -4,29 +4,19 @@ const LinkNav = () => {
     <div>
       <ul className='md:flex'>
         <a href='#home'>
-          <li className='py-5 text-2xl font-light md:py-0 md:pl-7 md:text-xl lg:px-7 xl:2xl hover:text-fourth duration-300'>
-            Home
-          </li>
+          <li className='navLink'>Home</li>
         </a>
         <a href='#About'>
-          <li className='py-5 text-2xl font-light md:py-0 md:pl-7 md:text-xl lg:px-7 xl:2xl hover:text-fourth duration-300'>
-            About me
-          </li>
+          <li className='navLink'>About me</li>
         </a>
         <a href='#Portfolio'>
-          <li className='py-5 text-2xl font-light md:py-0 md:pl-7 md:text-xl lg:px-7 xl:2xl hover:text-fourth duration-300'>
-            Portfolio
-          </li>
+          <li className='navLink'>Portfolio</li>
         </a>
         <a href='#Services'>
-          <li className='py-5 text-2xl font-light md:py-0 md:pl-7 md:text-xl lg:px-7 xl:2xl hover:text-fourth duration-300'>
-            Services
-          </li>
+          <li className='navLink'>Services</li>
         </a>
         <a href='#Contact'>
-          <li className='py-5 text-2xl font-light md:py-0 md:pl-7 md:text-xl lg:px-7 xl:2xl hover:text-fourth duration-300'>
-            Contact
-          </li>
+          <li className='navLink'>Contact</li>
         </a>
       </ul>
     </div>
