@@ -4,6 +4,7 @@ function App() {
     <div>
       <Nav />
       <Header />
+      <About />
     </div>
   );
 }

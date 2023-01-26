@@ -4,12 +4,25 @@ import { Burger, LinkNav } from '../components';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navBar, setNavBar] = useState(false);
+
   const handleToggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
+
+  const changeBackground = () => {
+    window.scrollY >= 100 ? setNavBar(true) : setNavBar(false);
+  };
+
+  window.addEventListener('scroll', changeBackground);
   return (
     <div className='fixed z-50'>
-      <nav>
+      <nav
+        className={`${
+          navBar ? 'bg-third' : 'bg-transparent'
+        } w-screen h-14 xl:h-[4rem] duration-300`}
+      >
+        {/* Telefony */}
         <div
           className={`${
             menuOpen ? 'translate-x-0' : 'translate-x-full'
@@ -19,7 +32,7 @@ const Nav = () => {
           <LinkNav />
         </div>
         <a href=''>
-          <h2 className='text-2xl font-semibold  md:text-3xl lg:text-3xl fixed top-6 left-5 xl:left-10'>
+          <h2 className='fixed top-3 left-5 text-2xl font-semibold  md:text-3xl lg:text-3xl xl:top-4 xl:left-10'>
             Karlos
             <span className=' text-fourth'>Dev</span>
           </h2>
@@ -30,7 +43,8 @@ const Nav = () => {
         >
           <Burger />
         </div>
-        <div className='hidden  md:flex fixed right-5 top-7'>
+        {/* Tablet */}
+        <div className='hidden  md:flex fixed right-5 md:top-4 xl:top-5'>
           <LinkNav />
         </div>
       </nav>
