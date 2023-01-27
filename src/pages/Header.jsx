@@ -8,10 +8,10 @@ const Home = () => {
       className='w-auto h-screen relative flex flex-col items-center justify-center lg:items-start lg:ml-[6rem]'
       id='Home'
     >
-      <p className='p-1 text-2xl uppercase bg-slate-200 text-black font-semibold md:text-4xl lg:text-6xl'>
+      <p className='p-1 text-2xl uppercase bg-slate-200 text-black font-semibold md:text-4xl lg:text-5xl'>
         Hello, I'am
       </p>
-      <h1 className='text-2xl uppercase text-fourth font-bold md:text-5xl lg:text-6xl'>
+      <h1 className='text-2xl uppercase text-fourth font-bold md:text-5xl lg:text-5xl'>
         Frontend Developer
       </h1>
       <div className='text-gray-500/20 uppercase text-sm px-8 mt-7'>
