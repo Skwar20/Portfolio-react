@@ -40,7 +40,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('educations')}
             className={`${
               activeTab == 'educations' ? 'text-fourth' : 'text-white'
-            } uppercase mx-2 duration-500`}
+            } uppercase mx-3 duration-500`}
           >
             educations
           </button>

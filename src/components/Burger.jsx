@@ -1,9 +1,9 @@
 import React from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { Squash as Hamburger } from 'hamburger-react';
 const Burger = () => {
   return (
-    <div className='fixed right-5 top-3 z-20'>
-      <RxHamburgerMenu className='text-3xl' />
+    <div className='fixed right-5 top-1 z-20'>
+      <Hamburger className='text-3xl' />
     </div>
   );
 };
