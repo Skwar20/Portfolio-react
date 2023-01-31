@@ -1,16 +1,13 @@
-import React from 'react';
-import {
-  AiOutlineGithub,
-  AiFillLinkedin,
-  AiOutlineInstagram,
-} from 'react-icons/ai';
+import React, { useState } from 'react';
+import { Skills, Educations, Works } from '../components';
 
 const AboutUs = () => {
+  const [activeTab, setActiveTab] = useState('skills');
   return (
-    <div className='h-auto bg-seconds'>
+    <div className='min-h-screen bg-seconds'>
       <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5'></div>
 
-      <div className='relative w-full max-width-[1200px] flex items-center flex-col my-10 py-6 px-4'>
+      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4'>
         <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third'>
           <img
             src='../public/me.webp'
@@ -30,11 +27,35 @@ const AboutUs = () => {
           much potentional customers as possible, The optimised code which makes
           the page more efficient.
         </p>
-        <div className='w-screen flex justify-end px-3 text-xl mt-3'>
-          <AiOutlineGithub className='hover:text-fourth duration-300' />
-          <AiFillLinkedin className='mx-2 hover:text-fourth duration-300' />
-          <AiOutlineInstagram className='hover:text-fourth duration-300' />
+        <div className='w-full mt-3 text-lg font-medium'>
+          <button
+            onClick={() => setActiveTab('skills')}
+            className={`${
+              activeTab == 'skills' ? 'text-fourth' : 'text-white'
+            } uppercase duration-500`}
+          >
+            skills
+          </button>
+          <button
+            onClick={() => setActiveTab('educations')}
+            className={`${
+              activeTab == 'educations' ? 'text-fourth' : 'text-white'
+            } uppercase mx-2 duration-500`}
+          >
+            educations
+          </button>
+          <button
+            onClick={() => setActiveTab('works')}
+            className={`${
+              activeTab == 'works' ? 'text-fourth' : 'text-white'
+            } uppercase duration-500`}
+          >
+            works
+          </button>
         </div>
+        {activeTab === 'skills' && <Skills />}
+        {activeTab === 'educations' && <Educations />}
+        {activeTab === 'works' && <Works />}
       </div>
     </div>
   );
