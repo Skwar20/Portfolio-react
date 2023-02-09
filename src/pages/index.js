@@ -4,5 +4,6 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Servies from './Servies';
 import Contact from './Contact';
+import Footer from './Footer';
 
-export { Nav, Header, About, Servies, Contact, Portfolio };
+export { Nav, Header, About, Servies, Contact, Portfolio, Footer };

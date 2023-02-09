@@ -4,30 +4,32 @@ import { Skills, Educations, Works } from '../components';
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState('skills');
   return (
-    <div className='min-h-screen bg-seconds'>
-      <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5'></div>
+    <div className='min-h-screen bg-seconds overflow-hidden '>
+      <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5 '></div>
 
-      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4'>
-        <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third'>
+      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
+        <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third md:w-[150px] md:h-[150px]'>
           <img
             src='../public/me.webp'
             alt='Awatar Karlosa'
           />
         </div>
-        <h2 className='text-2xl uppercase font-bold mt-5 mb-1'>about me</h2>
-        <h3 className='text-sm text-fourth font-medium'>
+        <h2 className='text-2xl uppercase font-bold mt-5 mb-1 md:text-3xl'>
+          about me
+        </h2>
+        <h3 className='text-sm text-fourth font-medium md:text-base'>
           17 years<span className='text-white m-1'>/</span>Karol{' '}
           <span className='text-white m-1'>/</span>
           Freelance
         </h3>
-        <p className='mt-5'>
+        <p className='mt-5 md:text-base'>
           Greetings, my name is Karol. My main goal while creating internet
           websites is correct "functionality", thats why i care about correct
           SEO, to make the page highly positioned in our browsers and get as
           much potentional customers as possible, The optimised code which makes
           the page more efficient.
         </p>
-        <div className='w-full mt-3 text-lg font-medium'>
+        <div className='w-full mt-3 text-lg font-medium md:text-xl md:mt-5 xl:mt-8'>
           <button
             onClick={() => setActiveTab('skills')}
             className={`${
@@ -53,7 +55,7 @@ const AboutUs = () => {
             works
           </button>
         </div>
-        {activeTab === 'skills' && <Skills />}
+        {activeTab === 'skills' && <Skills activeTab={activeTab} />}
         {activeTab === 'educations' && <Educations />}
         {activeTab === 'works' && <Works />}
       </div>

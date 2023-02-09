@@ -21,11 +21,11 @@ const Home = () => {
         </p>
         <BiCodeAlt className='text-2xl md:text-3xl' />
       </div>
-      <BiUser className='text-4xl xl:text-5xl text-gray-300/20 blur-[0.7px] absolute top-[12%] left-[10%] hover:scale-125 duration-300' />
-      <AiTwotoneFolderOpen className='text-4xl xl:text-5xl text-gray-300/20 blur-[0.7px] absolute top-[23%] left-[50%] hover:scale-125 duration-300' />
-      <RiContactsBookLine className='text-4xl xl:text-5xl text-gray-300/20 blur-[0.7px] absolute top-[17%] right-[10%] hover:scale-125 duration-300' />
-      <AiOutlineFile className='text-4xl xl:text-5xl text-gray-300/20 blur-[0.7px] absolute bottom-[17%] left-[23%] hover:scale-125 duration-300' />
-      <BiReceipt className='text-4xl xl:text-5xl text-gray-300/20 blur-[0.7px] absolute bottom-[10%] right-[23%] hover:scale-125 duration-300' />
+      <BiUser className='text-3xl xl:text-4xl text-gray-300/20 blur-[0.7px] absolute top-[12%] left-[10%] hover:scale-125 duration-300' />
+      <AiTwotoneFolderOpen className='text-3xl xl:text-4xl text-gray-300/20 blur-[0.7px] absolute top-[23%] left-[50%] hover:scale-125 duration-300' />
+      <RiContactsBookLine className='text-3xl xl:text-4xl text-gray-300/20 blur-[0.7px] absolute top-[17%] right-[10%] hover:scale-125 duration-300' />
+      <AiOutlineFile className='text-3xl xl:text-4xl text-gray-300/20 blur-[0.7px] absolute bottom-[17%] left-[23%] hover:scale-125 duration-300' />
+      <BiReceipt className='text-3xl xl:text-4xl text-gray-300/20 blur-[0.7px] absolute bottom-[10%] right-[23%] hover:scale-125 duration-300' />
     </div>
   );
 };
