@@ -4,7 +4,7 @@ import { Skills, Educations, Works } from '../components';
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState('skills');
   return (
-    <div className='min-h-screen bg-seconds overflow-hidden '>
+    <div className='min-h-screen bg-seconds overflow-hidden'>
       <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5 '></div>
 
       <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
@@ -29,12 +29,12 @@ const AboutUs = () => {
           much potentional customers as possible, The optimised code which makes
           the page more efficient.
         </p>
-        <div className='w-full mt-3 text-lg font-medium md:text-xl md:mt-5 xl:mt-8'>
+        <div className='w-full mt-4 text-lg font-medium transition-all flex items-center justify-evenly'>
           <button
             onClick={() => setActiveTab('skills')}
             className={`${
               activeTab == 'skills' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500`}
+            } uppercase duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
           >
             skills
           </button>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('educations')}
             className={`${
               activeTab == 'educations' ? 'text-fourth' : 'text-white'
-            } uppercase mx-3 duration-500`}
+            } uppercase mx-3 duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
           >
             educations
           </button>
@@ -50,7 +50,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('works')}
             className={`${
               activeTab == 'works' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500`}
+            } uppercase duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
           >
             works
           </button>

@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaSass, FaReact, FaWordpress } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 
 const Skills = ({ activeTab }) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    const div = ref.current;
+    setTimeout(() => {
+      div.classList.remove('-translate-x-2/4');
+      div.classList.add('translate-x-0');
+    }, 1);
+  }, []);
+
   return (
-    <div className='w-full mt-2 ml-2 py-2 duration-700'>
-      <div
-        className={`${
-          activeTab === 'skills'
-            ? 'translate-x-0 transition delay-700 duration-300'
-            : 'translate-x-full'
-        } `}
-      >
+    <div
+      ref={ref}
+      className={`${
+        activeTab === 'skills' && 'translate-x-0'
+      } ease-out w-full mt-2 ml-2 py-2 duration-700 -translate-x-2/4`}
+    >
+      <div>
         <div className='grid grid-cols-2 gap-10 mt-5 md:gap-y-10 md:gap-x-28 xl:grid-cols-3'>
           <div className='flex flex-col items-center hover:text-fourth'>
             <AiFillHtml5 className='text-4xl duration-500 md:text-4xl' />
