@@ -34,7 +34,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('skills')}
             className={`${
               activeTab == 'skills' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
+            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[100px]`}
           >
             skills
           </button>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('educations')}
             className={`${
               activeTab == 'educations' ? 'text-fourth' : 'text-white'
-            } uppercase mx-3 duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
+            } uppercase mx-3 duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[100px]`}
           >
             educations
           </button>
@@ -50,7 +50,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('works')}
             className={`${
               activeTab == 'works' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500 text-center px-2 py-1 border border-white min-w-[100px]`}
+            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[100px]`}
           >
             works
           </button>
