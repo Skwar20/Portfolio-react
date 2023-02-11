@@ -37,6 +37,6 @@ body {
 
 @layer components {
   .navLink {
-    @apply relative my-9 text-2xl font-normal text-gray-200 uppercase md:my-0 md:ml-4 md:text-base lg:mx-5 xl:ml-6 xl:text-base before:absolute before:left-0 before:-bottom-0 before:w-full before:h-0.5 before:bg-fourth before:scale-0 hover:before:scale-100 before:duration-500;
+    @apply relative my-9 text-2xl font-normal text-gray-200 uppercase md:my-0 md:ml-4 md:text-base lg:mx-5 xl:ml-6 xl:text-base before:absolute before:-left-2 md:before:left-0 before:h-full md:before:-bottom-0 md:before:w-full md:before:h-0.5 before:w-0.5 before:bg-fourth before:scale-0 hover:before:scale-110 before:duration-500;
   }
 }

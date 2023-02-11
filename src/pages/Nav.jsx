@@ -31,7 +31,7 @@ const Nav = () => {
         >
           <LinkNav />
         </div>
-        <a href=''>
+        <a href='#Home'>
           <h2 className='fixed top-3 left-5 text-2xl font-semibold  md:text-3xl lg:text-3xl xl:top-4 xl:left-10'>
             Karlos
             <span className=' text-fourth'>Dev</span>
@@ -41,7 +41,7 @@ const Nav = () => {
           className='z-20 md:hidden'
           onClick={handleToggleMenu}
         >
-          <Burger />
+          <Burger menuOpen={menuOpen} />
         </div>
         {/* Tablet */}
         <div className='hidden  md:flex fixed right-5 md:top-4 xl:top-5'>

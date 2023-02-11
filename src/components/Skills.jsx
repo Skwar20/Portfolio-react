@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <div
       ref={ref}
-      className='ease-out w-full mt-2 ml-2 py-2 duration-700 -translate-x-2/4'
+      className='ease-out w-full mt-2 ml-2 py-2 duration-500 -translate-x-2/4'
     >
       <div>
         <div className='grid grid-cols-2 gap-10 mt-5 md:gap-y-10 md:gap-x-28 xl:grid-cols-3'>

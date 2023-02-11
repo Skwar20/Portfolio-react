@@ -1,23 +1,24 @@
 import React from 'react';
-const LinkNav = () => {
+
+const LinkNav = ({ menuOpen }) => {
   return (
     <div>
       <ul className='md:flex'>
-        <a href='#home'>
-          <li className='navLink'>Home</li>
-        </a>
-        <a href='#About'>
-          <li className='navLink'>About me</li>
-        </a>
-        <a href='#Portfolio'>
-          <li className='navLink'>Portfolio</li>
-        </a>
-        <a href='#Services'>
-          <li className='navLink'>Services</li>
-        </a>
-        <a href='#Contact'>
-          <li className='navLink'>Contact</li>
-        </a>
+        <li className='navLink'>
+          <a href='#Home'>Home</a>
+        </li>
+        <li className='navLink'>
+          <a href='#About'>About me</a>
+        </li>
+        <li className='navLink'>
+          <a href='#Portfolio'>Portfolio</a>
+        </li>
+        <li className='navLink'>
+          <a href='#Services'>Services</a>
+        </li>
+        <li className='navLink'>
+          <a href='#Contact'>Contact</a>
+        </li>
       </ul>
     </div>
   );
