@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Educations = ({ activeTab }) => {
+const Educations = () => {
   const ref = useRef(null);
   useEffect(() => {
     const div = ref.current;
@@ -12,9 +12,7 @@ const Educations = ({ activeTab }) => {
   return (
     <div
       ref={ref}
-      className={`${
-        activeTab === 'education' && 'translate-x-0'
-      } ease-out w-full mt-2 ml-2 py-2 duration-700 -translate-x-2/4`}
+      className='ease-out w-full mt-2 ml-2 py-2 duration-700 -translate-x-2/4'
     >
       <div className='border-b-gray-700 border-b my-2'></div>
       <div className='w-full flex justify-between text-fourth font-semibold uppercase'>

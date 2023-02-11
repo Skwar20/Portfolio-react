@@ -8,11 +8,8 @@ const AboutUs = () => {
       <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5 '></div>
 
       <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
-        <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third md:w-[150px] md:h-[150px]'>
-          <img
-            src='../public/me.webp'
-            alt='Awatar Karlosa'
-          />
+        <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third md:w-[150px] md:h-[150px] flex items-center justify-center'>
+          <p>Awatar</p>
         </div>
         <h2 className='text-2xl uppercase font-bold mt-5 mb-1 md:text-3xl'>
           about me
@@ -55,7 +52,7 @@ const AboutUs = () => {
             works
           </button>
         </div>
-        {activeTab === 'skills' && <Skills activeTab={activeTab} />}
+        {activeTab === 'skills' && <Skills />}
         {activeTab === 'educations' && <Educations />}
         {activeTab === 'works' && <Works />}
       </div>
