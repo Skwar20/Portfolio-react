@@ -7,7 +7,7 @@ import {
 
 const footer = () => {
   return (
-    <div className='w-full flex items-center justify-between py-3 px-4 md:py-3 md:px-5 lg:px-7'>
+    <div className='w-full flex items-center justify-between py-3 px-4 md:py-3 md:px-5 lg:px-7 bg-seconds'>
       <p className='md:text-xl'>
         KarlosDev <span>|</span> &copy;2023
       </p>

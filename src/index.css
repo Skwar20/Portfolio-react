@@ -31,6 +31,14 @@ body {
   background-color: #f89f5b;
 }
 
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: -15px !important;
+  text-align: right;
+  z-index: 20;
+}
+
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: rgba(255, 255, 255, 0.2);
