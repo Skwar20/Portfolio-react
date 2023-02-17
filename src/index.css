@@ -16,7 +16,6 @@ html {
 
 body {
   position: relative;
-  background-color: #1d1b31;
   color: white;
   font-family: Poppins;
 }
@@ -27,15 +26,21 @@ body {
   font-size: 5rem;
 }
 
+.swiper-pagination-bullet {
+  background-color: #f89f5b;
+  width: 9px;
+  height: 9px;
+  transition: opacity 0.6s;
+}
 .swiper-pagination-bullet-active {
   background-color: #f89f5b;
+  color: #111010;
 }
 
 .swiper-pagination {
   position: absolute !important;
-  bottom: 0 !important;
-  left: -15px !important;
-  text-align: right;
+  bottom: -2px !important;
+  text-align: center;
   z-index: 20;
 }
 

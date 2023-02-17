@@ -5,7 +5,7 @@ import { RiContactsBookLine } from 'react-icons/ri';
 const Home = () => {
   return (
     <div
-      className='w-auto h-screen relative flex flex-col items-center justify-center lg:items-start lg:ml-[6rem]'
+      className='w-auto h-screen bg-first relative flex flex-col items-center justify-center lg:items-start lg:pl-[6rem]'
       id='Home'
     >
       <p className='p-1 text-2xl uppercase bg-slate-200 text-black font-semibold md:text-4xl lg:text-5xl'>

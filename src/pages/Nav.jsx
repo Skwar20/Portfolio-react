@@ -26,7 +26,7 @@ const Nav = () => {
         <div
           className={`${
             menuOpen ? 'translate-x-0' : 'translate-x-full'
-          } w-screen h-screen flex items-center justify-center fixed bg-seconds duration-500 md:hidden z-10`}
+          } w-screen h-screen flex items-center justify-center fixed bg-second duration-500 md:hidden z-10`}
           onClick={handleToggleMenu}
         >
           <LinkNav />

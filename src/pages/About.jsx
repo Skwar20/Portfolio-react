@@ -5,12 +5,12 @@ const AboutUs = () => {
   const [activeTab, setActiveTab] = useState('skills');
   return (
     <div
-      className='min-h-screen bg-seconds overflow-hidden'
+      className='min-h-screen bg-second overflow-hidden'
       id='About'
     >
       <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5 '></div>
 
-      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-5 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
+      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
         <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third md:w-[150px] md:h-[150px] flex items-center justify-center'>
           <p>Awatar</p>
         </div>
@@ -34,7 +34,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('skills')}
             className={`${
               activeTab == 'skills' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[80px]`}
+            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded`}
           >
             skills
           </button>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('educations')}
             className={`${
               activeTab == 'educations' ? 'text-fourth' : 'text-white'
-            } uppercase mx-3 duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[80px]`}
+            } uppercase mx-2 duration-500 text-center px-2 py-1 border border-gray-400 rounded`}
           >
             educations
           </button>
@@ -50,7 +50,7 @@ const AboutUs = () => {
             onClick={() => setActiveTab('works')}
             className={`${
               activeTab == 'works' ? 'text-fourth' : 'text-white'
-            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded min-w-[80px]`}
+            } uppercase duration-500 text-center px-2 py-1 border border-gray-400 rounded`}
           >
             works
           </button>
