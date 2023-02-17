@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const Educations = () => {
-  const ref = useRef(null);
+  const ref = useRef();
   useEffect(() => {
     const div = ref.current;
     setTimeout(() => {

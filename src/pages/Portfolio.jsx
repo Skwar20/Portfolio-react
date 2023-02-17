@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -16,7 +16,7 @@ const Portfolio = () => {
       description:
         'My weather app, made with HTML, CSS, and JavaScript, allows users to check the current weather for a given location. They can enter a city name or zip code and the app will display temperature, atmospheric pressure, humidity, and wind data. The app is available on computers and mobile devices.',
       alt: 'Zdjecie pokazujące wygląd projektu WeatherApp',
-      demo: 'link',
+      demo: 'https://skwar20.github.io/WeatherApp/',
       github: 'https://github.com/Skwar20/WeatherApp',
       img: './WeatherApp.png',
     },
@@ -25,7 +25,7 @@ const Portfolio = () => {
       description:
         'ToDo List is an app that allows users to save and manage their tasks. It enables the adding, editing, and deleting of tasks, as well as marking tasks as completed. The app helps users organize their responsibilities and manage their time more efficiently. It is available on computers and mobile devices and is simple to use.',
       alt: 'Zdjecie pokazujące wygląd projektu WeatherApp',
-      demo: 'link',
+      demo: '',
       github: '',
       img: './comingSoon.png',
     },
@@ -34,7 +34,7 @@ const Portfolio = () => {
       description:
         'StopWatch is an app that allows users to measure time and track their progress. Users can start, pause, or reset the timer and save an unlimited number of time measurements. The app is available on both computers and mobile devices and helps users improve their performance.',
       alt: 'Zdjecie pokazujące wygląd projektu WeatherApp',
-      demo: 'link',
+      demo: '',
       github: '',
       img: './comingSoon.png',
     },
@@ -46,7 +46,7 @@ const Portfolio = () => {
     >
       <div className='w-3/5 bg-second h-10 -skew-x-[45deg] -translate-x-5 '></div>
       <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 pb-12 px-5 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
-        <h2 className='text-2xl uppercase font-bold mt-5 mb-6 md:text-3xl'>
+        <h2 className='relative text-2xl uppercase font-bold mt-5 mb-6 md:text-3xl after:absolute after:bottom-0 after:left-0 after:w-1/4 after:h-[1px] after:bg-fourth'>
           portfolio
         </h2>
         <Swiper

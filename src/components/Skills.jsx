@@ -4,7 +4,7 @@ import { FaCss3Alt, FaSass, FaReact, FaWordpress } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 
 const Skills = () => {
-  const ref = useRef(null);
+  const ref = useRef();
   useEffect(() => {
     const div = ref.current;
     setTimeout(() => {
