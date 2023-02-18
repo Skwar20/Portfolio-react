@@ -2,8 +2,8 @@ import Nav from './Nav';
 import Header from './Header';
 import About from './About';
 import Portfolio from './Portfolio';
-import Servies from './Servies';
 import Contact from './Contact';
 import Footer from './Footer';
+import Form from './Form';
 
-export { Nav, Header, About, Servies, Contact, Portfolio, Footer };
+export { Nav, Header, About, Contact, Portfolio, Footer, Form };

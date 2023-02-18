@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LinkNav = ({ menuOpen }) => {
+const LinkNav = ({}) => {
   return (
     <div>
       <ul className='md:flex'>
@@ -12,9 +12,6 @@ const LinkNav = ({ menuOpen }) => {
         </li>
         <li className='navLink'>
           <a href='#Portfolio'>Portfolio</a>
-        </li>
-        <li className='navLink'>
-          <a href='#Services'>Services</a>
         </li>
         <li className='navLink'>
           <a href='#Contact'>Contact</a>
