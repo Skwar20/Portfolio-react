@@ -5,12 +5,12 @@ const AboutUs = () => {
   const [activeTab, setActiveTab] = useState('skills');
   return (
     <div
-      className='min-h-screen bg-second overflow-hidden'
+      className='w-full min-h-screen bg-second overflow-hidden'
       id='About'
     >
       <div className='w-3/5 bg-first h-10 -skew-x-[45deg] -translate-x-5 '></div>
 
-      <div className='relative w-full max-width-[1200px] flex items-center flex-col py-6 px-4 md:py-12 md:px-7 lg:px-[6rem] xl:px-[15rem]'>
+      <div className='relative w-full max-w-[1300px] mx-auto flex items-center flex-col py-6 px-4'>
         <div className='w-[120px] h-[120px] rounded-full overflow-hidden bg-third md:w-[150px] md:h-[150px]'>
           <img
             src='./me.webp'
