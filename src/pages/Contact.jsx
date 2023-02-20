@@ -11,7 +11,7 @@ const Contact = () => {
 				<form
 					action="https://formsubmit.co/ak5224208@gmail.com"
 					method="POST"
-					className="w-2/3 flex flex-col items-center text-white">
+					className="w-full xl:w-2/3 flex flex-col items-center text-white">
 					<input
 						type="email"
 						name="email"
